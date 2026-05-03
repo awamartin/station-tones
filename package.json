@@ -1,0 +1,43 @@
+{
+  "name": "station-tones",
+  "version": "0.1.0",
+  "description": "Deterministic 4-second melodies for transit station/platform identifiers.",
+  "type": "module",
+  "main": "src/index.js",
+  "exports": {
+    ".": "./src/index.js",
+    "./midi": "./src/midi.js",
+    "./wav": "./src/wav.js",
+    "./webaudio": "./src/webaudio.js"
+  },
+  "bin": {
+    "station-tones": "src/cli.js"
+  },
+  "files": [
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "music",
+    "melody",
+    "tones",
+    "station",
+    "transit",
+    "midi",
+    "wav",
+    "audio",
+    "deterministic"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "vitest": "^2.1.0"
+  }
+}
